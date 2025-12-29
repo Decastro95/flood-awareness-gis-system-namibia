@@ -1,0 +1,14 @@
+map.addSource("cuvelaiFloodplain", {
+  type: "geojson",
+  data: "/data/cuvelai_floodplain.geojson"
+});
+
+map.addLayer({
+  id: "cuvelai-floodplain",
+  type: "fill",
+  source: "cuvelaiFloodplain",
+  paint: {
+    "fill-color": "#4A90E2",
+    "fill-opacity": 0.45
+  }
+});
