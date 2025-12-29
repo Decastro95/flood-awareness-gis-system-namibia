@@ -1,0 +1,773 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1333,
+          -26.5786
+        ]
+      },
+      "properties": {
+        "city": "Keetmanshoop",
+        "population": 16800,
+        "region": "\u01c1Karas",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.1539,
+          -26.6458
+        ]
+      },
+      "properties": {
+        "city": "L\u00fcderitz",
+        "population": 12537,
+        "region": "\u01c1Karas",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.65,
+          -26.8
+        ]
+      },
+      "properties": {
+        "city": "Aroab",
+        "population": 5000,
+        "region": "\u01c1Karas",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.7667,
+          -25.9667
+        ]
+      },
+      "properties": {
+        "city": "Berseba",
+        "population": 5000,
+        "region": "\u01c1Karas",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.75,
+          -28.0167
+        ]
+      },
+      "properties": {
+        "city": "Karasburg",
+        "population": 4401,
+        "region": "\u01c1Karas",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4264,
+          -28.5517
+        ]
+      },
+      "properties": {
+        "city": "Oranjemund",
+        "population": 3900,
+        "region": "\u01c1Karas",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.15,
+          -26.4833
+        ]
+      },
+      "properties": {
+        "city": "Bethanie",
+        "population": 3900,
+        "region": "\u01c1Karas",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5081,
+          -22.9561
+        ]
+      },
+      "properties": {
+        "city": "Walvisbaai",
+        "population": 85000,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5333,
+          -22.6833
+        ]
+      },
+      "properties": {
+        "city": "Swakopmund",
+        "population": 34300,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5,
+          -21.05
+        ]
+      },
+      "properties": {
+        "city": "Omatjete",
+        "population": 12000,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1286,
+          -22.3575
+        ]
+      },
+      "properties": {
+        "city": "Otjimbingwe",
+        "population": 8000,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9333,
+          -21.4333
+        ]
+      },
+      "properties": {
+        "city": "Omaruru",
+        "population": 6300,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9667,
+          -22.4167
+        ]
+      },
+      "properties": {
+        "city": "Arandis",
+        "population": 5214,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8544,
+          -21.9381
+        ]
+      },
+      "properties": {
+        "city": "Karibib",
+        "population": 5132,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2824,
+          -22.1184
+        ]
+      },
+      "properties": {
+        "city": "Hentiesbaai",
+        "population": 4725,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.8675,
+          -21.2186
+        ]
+      },
+      "properties": {
+        "city": "Uis",
+        "population": 3600,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6,
+          -22.0
+        ]
+      },
+      "properties": {
+        "city": "Usakos",
+        "population": 3583,
+        "region": "Erongo",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0833,
+          -23.3167
+        ]
+      },
+      "properties": {
+        "city": "Rehoboth",
+        "population": 28843,
+        "region": "Hardap",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.9667,
+          -24.6333
+        ]
+      },
+      "properties": {
+        "city": "Mariental",
+        "population": 12478,
+        "region": "Hardap",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.9833,
+          -24.8333
+        ]
+      },
+      "properties": {
+        "city": "Maltah\u00f6he",
+        "population": 6000,
+        "region": "Hardap",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.1167,
+          -24.1333
+        ]
+      },
+      "properties": {
+        "city": "Aranos",
+        "population": 3683,
+        "region": "Hardap",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.05,
+          -23.9167
+        ]
+      },
+      "properties": {
+        "city": "Hoachanas",
+        "population": 3000,
+        "region": "Hardap",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.7667,
+          -17.9167
+        ]
+      },
+      "properties": {
+        "city": "Rundu",
+        "population": 63431,
+        "region": "Kavango East",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.1536,
+          -17.9856
+        ]
+      },
+      "properties": {
+        "city": "Kangongo",
+        "population": 5000,
+        "region": "Kavango East",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.6,
+          -17.6167
+        ]
+      },
+      "properties": {
+        "city": "Nkurenkuru",
+        "population": 618,
+        "region": "Kavango West",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0836,
+          -22.57
+        ]
+      },
+      "properties": {
+        "city": "Windhoek",
+        "population": 431000,
+        "region": "Khomas",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8406,
+          -18.0556
+        ]
+      },
+      "properties": {
+        "city": "Opuwo",
+        "population": 20000,
+        "region": "Kunene",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1547,
+          -20.1089
+        ]
+      },
+      "properties": {
+        "city": "Outjo",
+        "population": 10000,
+        "region": "Kunene",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9667,
+          -20.3667
+        ]
+      },
+      "properties": {
+        "city": "Khorixas",
+        "population": 6796,
+        "region": "Kunene",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.8333,
+          -19.6333
+        ]
+      },
+      "properties": {
+        "city": "Kamanjab",
+        "population": 6012,
+        "region": "Kunene",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8833,
+          -17.4
+        ]
+      },
+      "properties": {
+        "city": "Oshikango",
+        "population": 12423,
+        "region": "Ohangwena",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3369,
+          -17.4658
+        ]
+      },
+      "properties": {
+        "city": "Eenhana",
+        "population": 5528,
+        "region": "Ohangwena",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9667,
+          -22.4333
+        ]
+      },
+      "properties": {
+        "city": "Gobabis",
+        "population": 19101,
+        "region": "Omaheke",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.0,
+          -17.5167
+        ]
+      },
+      "properties": {
+        "city": "Outapi",
+        "population": 4606,
+        "region": "Omusati",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6995,
+          -17.7833
+        ]
+      },
+      "properties": {
+        "city": "Oshakati",
+        "population": 39679,
+        "region": "Oshana",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.95,
+          -17.9167
+        ]
+      },
+      "properties": {
+        "city": "Ondangwa",
+        "population": 22822,
+        "region": "Oshana",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7667,
+          -17.7833
+        ]
+      },
+      "properties": {
+        "city": "Ongwediva",
+        "population": 10964,
+        "region": "Oshana",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.7086,
+          -17.7403
+        ]
+      },
+      "properties": {
+        "city": "Okatana",
+        "population": 4550,
+        "region": "Oshana",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.7,
+          -19.25
+        ]
+      },
+      "properties": {
+        "city": "Tsumeb",
+        "population": 19275,
+        "region": "Oshikoto",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.9667,
+          -18.7667
+        ]
+      },
+      "properties": {
+        "city": "Tsintsabis",
+        "population": 4000,
+        "region": "Oshikoto",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5812,
+          -18.3606
+        ]
+      },
+      "properties": {
+        "city": "Omuthiya",
+        "population": 3794,
+        "region": "Oshikoto",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1036,
+          -19.5658
+        ]
+      },
+      "properties": {
+        "city": "Grootfontein",
+        "population": 23793,
+        "region": "Otjozondjupa",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.9167,
+          -21.9833
+        ]
+      },
+      "properties": {
+        "city": "Okahandja",
+        "population": 22639,
+        "region": "Otjozondjupa",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6528,
+          -20.4642
+        ]
+      },
+      "properties": {
+        "city": "Otjiwarongo",
+        "population": 19614,
+        "region": "Otjozondjupa",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.4578,
+          -20.5858
+        ]
+      },
+      "properties": {
+        "city": "Okakarara",
+        "population": 7000,
+        "region": "Otjozondjupa",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.3333,
+          -19.65
+        ]
+      },
+      "properties": {
+        "city": "Otavi",
+        "population": 5242,
+        "region": "Otjozondjupa",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1833,
+          -20.8833
+        ]
+      },
+      "properties": {
+        "city": "Kalkfeld",
+        "population": 5000,
+        "region": "Otjozondjupa",
+        "country": "Namibia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.275,
+          -17.5039
+        ]
+      },
+      "properties": {
+        "city": "Katima Mulilo",
+        "population": 28699,
+        "region": "Zambezi",
+        "country": "Namibia"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ohangwena",
+        "priority": "High"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[15.5,-16.8],[16.7,-16.8],[16.7,-17.8],[15.5,-17.8],[15.5,-16.8]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Omusati",
+        "priority": "High"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[14.8,-17.0],[16.0,-17.0],[16.0,-18.2],[14.8,-18.2],[14.8,-17.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oshana",
+        "priority": "High"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[15.8,-17.5],[16.8,-17.5],[16.8,-18.3],[15.8,-18.3],[15.8,-17.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oshikoto",
+        "priority": "High"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[16.5,-17.0],[17.8,-17.0],[17.8,-18.5],[16.5,-18.5],[16.5,-17.0]]]
+      }
+    }
+  ]
+}

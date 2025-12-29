@@ -1,0 +1,20 @@
+map.addSource("zambeziFloodRisk", {
+  type: "geojson",
+  data: "/data/zambezi_flood_risk.geojson"
+});
+
+map.addLayer({
+  id: "zambezi-flood-risk",
+  type: "fill",
+  source: "zambeziFloodRisk",
+  paint: {
+    "fill-color": [
+      "step",
+      ["get", "risk_class"],
+      "#2DC937", // low
+      3, "#E7B416", // medium
+      6, "#CC3232"  // high
+    ],
+    "fill-opacity": 0.6
+  }
+});

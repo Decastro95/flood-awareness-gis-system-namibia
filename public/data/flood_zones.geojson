@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "risk_level": "High",
+        "region": "Oshana"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[16.8,-17.9],[17.3,-17.9],[17.3,-18.4],[16.8,-18.4],[16.8,-17.9]]]
+      }
+    }
+  ]
+}

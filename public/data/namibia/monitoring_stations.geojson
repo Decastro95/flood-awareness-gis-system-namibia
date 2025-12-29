@@ -1,0 +1,176 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.8,
+          -23.283333
+        ]
+      },
+      "properties": {
+        "Latitude": "-2.32833330000e+001",
+        "Longitude": "1.58000000000e+001",
+        "Name": "Kuiseb - Schlesien Weir",
+        "catch": "Kuiseb 2",
+        "Number": "3.10000000000e+001",
+        "Letter": "",
+        "height": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.65,
+          -23.083333
+        ]
+      },
+      "properties": {
+        "Latitude": "-2.30833330000e+001",
+        "Longitude": "1.86500000000e+001",
+        "Name": "White - Nossob Amasib",
+        "catch": "Kalahari",
+        "Number": "3.90000000000e+001",
+        "Letter": "",
+        "height": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.8,
+          -26.816667
+        ]
+      },
+      "properties": {
+        "Latitude": "-2.68166670000e+001",
+        "Longitude": "1.78000000000e+001",
+        "Name": "Fish - Seeheim",
+        "catch": "Fish",
+        "Number": "5.10000000000e+001",
+        "Letter": "",
+        "height": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.216667,
+          -17.4
+        ]
+      },
+      "properties": {
+        "Latitude": "-17.40000000000",
+        "Longitude": "14.21666700000",
+        "Name": "Kunene Ruacana",
+        "catch": "kunene",
+        "Number": "3.00000000000",
+        "Letter": "",
+        "height": 819
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.75,
+          -17.866667
+        ]
+      },
+      "properties": {
+        "Latitude": "-17.86666700000",
+        "Longitude": "19.75000000000",
+        "Name": "Okavango Rundu",
+        "catch": "NorthEast",
+        "Number": "7.00000000000",
+        "Letter": "",
+        "height": 1067
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.416667,
+          -18.033333
+        ]
+      },
+      "properties": {
+        "Latitude": "-18.03333300000",
+        "Longitude": "21.41666700000",
+        "Name": "Okavango Mukwe",
+        "catch": "NorthEast",
+        "Number": "8.00000000000",
+        "Letter": "",
+        "height": 1021
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.333333,
+          -17.783333
+        ]
+      },
+      "properties": {
+        "Latitude": "-17.78333300000",
+        "Longitude": "23.33333300000",
+        "Name": "Kwando Kongola",
+        "catch": "NorthEast",
+        "Number": "9.00000000000",
+        "Letter": "",
+        "height": 967
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2,
+          -17.416667
+        ]
+      },
+      "properties": {
+        "Latitude": "-17.41666700000",
+        "Longitude": "24.20000000000",
+        "Name": "Zambezi Katima Mulilo",
+        "catch": "NorthEast",
+        "Number": "10.00000000000",
+        "Letter": "",
+        "height": 947
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.622591619719227,
+          -28.765789731352044
+        ]
+      },
+      "properties": {
+        "Latitude": "0.00000000000",
+        "Longitude": "0.00000000000",
+        "Name": "Orange Noordoewer",
+        "catch": "Orange",
+        "Number": "0.00000000000",
+        "Letter": "",
+        "height": 167
+      }
+    }
+  ]
+}

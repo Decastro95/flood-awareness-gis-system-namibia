@@ -1,0 +1,62 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "river": "Kavango River",
+        "risk": "High"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [18.0, -18.0],
+            [19.2, -18.0],
+            [19.2, -19.3],
+            [18.0, -19.3],
+            [18.0, -18.0]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "river": "Zambezi River",
+        "risk": "High"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [22.2, -16.5],
+            [24.2, -16.5],
+            [24.2, -17.7],
+            [22.2, -17.7],
+            [22.2, -16.5]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "river": "Kunene River",
+        "risk": "Moderate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [13.5, -16.8],
+            [14.8, -16.8],
+            [14.8, -18.4],
+            [13.5, -18.4],
+            [13.5, -16.8]
+          ]
+        ]
+      }
+    }
+  ]
+}

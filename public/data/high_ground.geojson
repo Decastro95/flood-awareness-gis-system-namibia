@@ -1,0 +1,14 @@
+map.addSource("highGround", {
+  type: "geojson",
+  data: "/data/high_ground.geojson"
+});
+
+map.addLayer({
+  id: "high-ground",
+  type: "fill",
+  source: "highGround",
+  paint: {
+    "fill-color": "#2ECC71",
+    "fill-opacity": 0.7
+  }
+});

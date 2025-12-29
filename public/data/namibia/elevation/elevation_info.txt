@@ -1,0 +1,35 @@
+NAMIBIA ELEVATION DATA - SRTM 90m Resolution
+=====================================================
+
+File: Elevation_namibia_clipSRTM90V2.tif
+Size: 108MB
+Format: GeoTIFF
+Resolution: 90 meters per pixel
+Coverage: Entire Namibia territory
+Data Source: Shuttle Radar Topography Mission (SRTM)
+
+LOADING NOTICE:
+This is a large raster file (108MB) that may take time to load in the browser preview.
+For web applications, consider:
+1. Converting to smaller tile format
+2. Using cloud-optimized GeoTIFF (COG)
+3. Creating pyramid levels for different zoom scales
+
+USAGE RECOMMENDATIONS:
+- Use server-side processing for elevation queries
+- Implement tile-based serving for web maps
+- Consider MapBox Terrain API as alternative
+- Extract elevation profiles for specific areas only
+
+COORDINATE SYSTEM:
+- Projection: Geographic (WGS84)
+- EPSG Code: 4326
+- Bounds: Approximately 11°E to 25°E, 17°S to 29°S
+
+ELEVATION RANGE:
+- Minimum: Sea level (0m)
+- Maximum: ~2,600m (highest peaks in central highlands)
+- Average: ~1,100m
+
+For immediate use, refer to the CSV elevation profiles in /profiles/ folder
+which contain processed elevation data for the 5 major rivers.
