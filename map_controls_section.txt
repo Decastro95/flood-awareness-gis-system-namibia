@@ -1,0 +1,80 @@
+        <MapStyleSelector
+          currentStyle={currentMapStyle}
+          onStyleChange={handleStyleChange}
+        />
+
+        <div className="control-group">
+          <div className="control-title">
+            <span>🎛️</span>
+            Layers
+          </div>
+
+          <div className="control-option">
+            <input
+              type="checkbox"
+              id="rivers"
+              checked={showRivers}
+              onChange={() => setShowRivers(!showRivers)}
+            />
+            <label htmlFor="rivers">🌊 River Flood Buffers</label>
+          </div>
+
+          <div className="control-option">
+            <input
+              type="checkbox"
+              id="highground"
+              checked={showHighGround}
+              onChange={() => setShowHighGround(!showHighGround)}
+            />
+            <label htmlFor="highground">🏔️ High-Ground Safe Areas</label>
+          </div>
+
+          <div className="control-option">
+            <input
+              type="checkbox"
+              id="safezones"
+              checked={showSafeZones}
+              onChange={() => setShowSafeZones(!showSafeZones)}
+            />
+            <label htmlFor="safezones">🏫 Safe Zone Markers ({safeZones.length})</label>
+          </div>
+
+          <div className="control-option">
+            <input
+              type="checkbox"
+              id="historicalfloods"
+              checked={showHistoricalFloods}
+              onChange={() => setShowHistoricalFloods(!showHistoricalFloods)}
+            />
+            <label htmlFor="historicalfloods">📜 Historical Floods (2011)</label>
+          </div>
+        </div>
+      </div>
+
+      {/* Map */}
+      <div ref={mapContainer} style={{ width: "100%", height: "100%" }} />
+
+      {/* Legend */}
+      <div className="map-legend">
+        <div className="legend-title">📊 Map Legend</div>
+        <div className="legend-item">
+          <div className="legend-color" style={{ backgroundColor: "#0284c7", opacity: 0.7 }}></div>
+          <span>River Flood Risk Areas</span>
+        </div>
+        <div className="legend-item">
+          <div className="legend-color" style={{ backgroundColor: "#16a34a", opacity: 0.7 }}></div>
+          <span>High Ground Safe Areas</span>
+        </div>
+        <div className="legend-item">
+          <div className="legend-color" style={{ backgroundColor: "#16a34a", borderRadius: "50%" }}></div>
+          <span>Safe Zone Shelters</span>
+        </div>
+        <div className="text-center mt-2">
+          <small style={{ color: "#6b7280", fontSize: "0.75rem" }}>
+            Click markers for shelter details
+          </small>
+        </div>
+      </div>
+    </div>
+  );
+}

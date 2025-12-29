@@ -1,0 +1,63 @@
+{
+  "name": "flood-awareness-gis-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A web-based GIS platform for flood risk mapping and public awareness in Northern Namibia",
+  "author": "Immanuel T Ndatipo",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@ai-sdk/xai": "^3.0.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mapbox/mapbox-gl-geocoder": "^5.1.2",
+    "@mui/material": "^7.3.6",
+    "@supabase/supabase-js": "^2.45.4",
+    "@turf/turf": "^6.5.0",
+    "@types/leaflet": "^1.9.21",
+    "@vercel/analytics": "^1.6.1",
+    "ai": "^6.0.3",
+    "chart.js": "^4.5.1",
+    "exifr": "^7.1.0",
+    "leaflet": "^1.9.4",
+    "mapbox-gl": "^3.17.0",
+    "next": "^15.0.0",
+    "openai": "^6.15.0",
+    "react": "^19.0.0",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/mapbox__mapbox-gl-geocoder": "^5.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^16.1.0",
+    "prettier": "^3",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "gis",
+    "flood-awareness",
+    "namibia",
+    "nextjs",
+    "mapbox",
+    "supabase"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Decastro95/flood-awareness-gis-system"
+  }
+}
