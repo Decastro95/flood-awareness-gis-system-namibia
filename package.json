@@ -19,6 +19,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mapbox/mapbox-gl-geocoder": "^5.1.2",
+    "@mui/icons-material": "^7.3.6",
     "@mui/material": "^7.3.6",
     "@supabase/supabase-js": "^2.45.4",
     "@turf/turf": "^6.5.0",
