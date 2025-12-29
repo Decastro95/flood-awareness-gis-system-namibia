@@ -1,134 +1,33 @@
-// src/app/page.tsx (add this to show the map)
+// src/components/FloodAlertsPanel.tsx
 "use client";
 
-import React from "react";
-import { Box, Container, Typography, Button } from "@mui/material";
-import MapIcon from "@mui/icons-material/Map";
-import PublicIcon from "@mui/icons-material/Public";
-import WarningIcon from "@mui/icons-material/Warning";
-import LeafletMap from "@/components/LeafletMap";
+import { useState } from "react";
+import { Alert, AlertTitle } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
-export default function Home() {
+export default function FloodAlertsPanel() {
+  const [alerts] = useState([
+    {
+      title: "No Active Alerts",
+      description: "All clear in Northern Namibia.",
+      severity: "info",
+    },
+  ]);
+
   return (
-    <Box>
-      {/* Hero Section (current live design) */}
-      <Box
-        sx={{
-          background: "linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)",
-          color: "white",
-          py: { xs: 8, md: 12 },
-          textAlign: "center",
-        }}
-      >
-        <Container maxWidth="md">
-          <Typography
-            variant="h3"
-            component="h1"
-            gutterBottom
-            fontWeight="bold"
-          >
-            Flood Awareness GIS System
-          </Typography>
-          <Typography variant="h6" gutterBottom sx={{ mb: 6 }}>
-            Interactive flood risk mapping and public awareness platform for
-            Northern Namibia
-          </Typography>
-
-          <Box
-            sx={{
-              display: "flex",
-              gap: 3,
-              justifyContent: "center",
-              flexWrap: "wrap",
-            }}
-          >
-            <Button
-              variant="contained"
-              size="large"
-              startIcon={<MapIcon />}
-              sx={{ minWidth: 220, backgroundColor: "white", color: "#1976d2" }}
-            >
-              View Interactive Map
-            </Button>
-            <Button
-              variant="outlined"
-              size="large"
-              startIcon={<PublicIcon />}
-              sx={{ minWidth: 220, borderColor: "white", color: "white" }}
-            >
-              Globe View
-            </Button>
-            <Button
-              variant="contained"
-              size="large"
-              startIcon={<WarningIcon />}
-              color="error"
-              sx={{ minWidth: 220 }}
-            >
-              Emergency Alerts
-            </Button>
-          </Box>
-        </Container>
-      </Box>
-
-      {/* Map Section */}
-      <Container maxWidth="lg" sx={{ py: 8 }}>
-        <Typography variant="h4" gutterBottom textAlign="center">
-          Interactive Flood Risk Map
-        </Typography>
-        <Box
-          sx={{
-            height: "600px",
-            width: "100%",
-            mt: 4,
-            borderRadius: 2,
-            overflow: "hidden",
-            boxShadow: 6,
-          }}
+    <Box sx={{ p: 2 }}>
+      <Typography variant="h6" gutterBottom>
+        Emergency Alerts
+      </Typography>
+      {alerts.map((alert, i) => (
+        <Alert
+          key={i}
+          severity={alert.severity as "error" | "warning" | "info" | "success"}
         >
-          <LeafletMap />
-        </Box>
-      </Container>
-
-      {/* Features */}
-      <Box sx={{ backgroundColor: "#f8fafc", py: 8 }}>
-        <Container maxWidth="lg">
-          <Typography variant="h4" gutterBottom textAlign="center">
-            Key Features
-          </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              gap: 8,
-              flexWrap: "wrap",
-              mt: 6,
-            }}
-          >
-            <Box sx={{ textAlign: "center" }}>
-              <Typography sx={{ fontSize: 80 }}>🗺️</Typography>
-              <Typography variant="h6">Real-Time Mapping</Typography>
-              <Typography color="text.secondary">
-                Live flood zones and safe areas
-              </Typography>
-            </Box>
-            <Box sx={{ textAlign: "center" }}>
-              <Typography sx={{ fontSize: 80 }}>🌧️</Typography>
-              <Typography variant="h6">Rainfall Monitoring</Typography>
-              <Typography color="text.secondary">
-                Current precipitation data
-              </Typography>
-            </Box>
-            <Box sx={{ textAlign: "center" }}>
-              <Typography sx={{ fontSize: 80 }}>🚨</Typography>
-              <Typography variant="h6">Early Warnings</Typography>
-              <Typography color="text.secondary">
-                SMS and emergency alerts
-              </Typography>
-            </Box>
-          </Box>
-        </Container>
-      </Box>
+          <AlertTitle>{alert.title}</AlertTitle>
+          {alert.description}
+        </Alert>
+      ))}
     </Box>
   );
 }
