@@ -1,33 +1,181 @@
-// src/components/FloodAlertsPanel.tsx
+// src/app/page.tsx
 "use client";
 
-import { useState } from "react";
-import { Alert, AlertTitle } from "@mui/material";
-import { Box, Typography } from "@mui/material";
+import React from "react";
+import { Box, Grid, Paper, Typography, Button } from "@mui/material";
+import WarningIcon from "@mui/icons-material/Warning";
+import LeafletMap from "@/components/LeafletMap";
+import { Bar, Line } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
 
-export default function FloodAlertsPanel() {
-  const [alerts] = useState([
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+// Sample chart data (replace with real from Supabase/OpenWeatherMap)
+const precipData = {
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+  datasets: [
     {
-      title: "No Active Alerts",
-      description: "All clear in Northern Namibia.",
-      severity: "info",
+      label: "Precipitation (mm)",
+      data: [10, 30, 80, 150, 200, 120],
+      backgroundColor: "#60a5fa",
     },
-  ]);
+  ],
+};
 
+const waterData = {
+  labels: ["Week 1", "Week 2", "Week 3", "Week 4"],
+  datasets: [
+    {
+      label: "Water Level (m)",
+      data: [1.0, 1.8, 3.2, 4.5],
+      borderColor: "#f87171",
+    },
+  ],
+};
+
+export default function Dashboard() {
   return (
-    <Box sx={{ p: 2 }}>
-      <Typography variant="h6" gutterBottom>
-        Emergency Alerts
+    <Box
+      sx={{
+        backgroundColor: "#0f172a",
+        color: "white",
+        minHeight: "100vh",
+        p: 4,
+      }}
+    >
+      <Typography
+        variant="h4"
+        gutterBottom
+        textAlign="center"
+        fontWeight="bold"
+      >
+        Flood Awareness GIS System – Northern Namibia
       </Typography>
-      {alerts.map((alert, i) => (
-        <Alert
-          key={i}
-          severity={alert.severity as "error" | "warning" | "info" | "success"}
-        >
-          <AlertTitle>{alert.title}</AlertTitle>
-          {alert.description}
-        </Alert>
-      ))}
+
+      <Grid container spacing={3}>
+        {/* Risk Stats Cards */}
+        <Grid item xs={12} sm={6} md={3}>
+          <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
+            <Typography variant="h6">Flood Risk Level</Typography>
+            <Typography variant="h3" color="error.main">
+              High
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
+            <Typography variant="h6">Population Affected</Typography>
+            <Typography variant="h3">12,345</Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
+            <Typography variant="h6">Probability Forecast</Typography>
+            <Typography variant="h3">64%</Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={6} md={3}>
+          <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
+            <Typography variant="h6">Active Alerts</Typography>
+            <Typography variant="h3" color="warning.main">
+              2
+            </Typography>
+          </Paper>
+        </Grid>
+
+        {/* Central Big Map */}
+        <Grid item xs={12} md={8}>
+          <Paper sx={{ p: 2, height: "600px", backgroundColor: "#1e293b" }}>
+            <Typography variant="h6" gutterBottom>
+              Northern Namibia Risk Map
+            </Typography>
+            <LeafletMap />
+          </Paper>
+        </Grid>
+
+        {/* Sidebar: Globe & Alerts */}
+        <Grid item xs={12} md={4}>
+          <Paper
+            sx={{ p: 2, mb: 4, height: "300px", backgroundColor: "#1e293b" }}
+          >
+            <Typography variant="h6" gutterBottom>
+              Globe View
+            </Typography>
+            <Box
+              sx={{
+                height: "100%",
+                backgroundColor: "#334155",
+                borderRadius: 2,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Typography>Globe Coming Soon</Typography>
+            </Box>
+          </Paper>
+          <Paper sx={{ p: 3, backgroundColor: "#dc2626" }}>
+            <Typography
+              variant="h6"
+              sx={{ display: "flex", alignItems: "center", gap: 1 }}
+            >
+              <WarningIcon /> Emergency Alerts
+            </Typography>
+            <Typography sx={{ mt: 1 }}>
+              Heavy rain in Oshana – evacuate low areas.
+            </Typography>
+          </Paper>
+        </Grid>
+
+        {/* Charts */}
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 3, backgroundColor: "#1e293b" }}>
+            <Typography variant="h6" gutterBottom>
+              Precipitation Level
+            </Typography>
+            <Bar data={precipData} options={{ responsive: true }} />
+          </Paper>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Paper sx={{ p: 3, backgroundColor: "#1e293b" }}>
+            <Typography variant="h6" gutterBottom>
+              Water Levels
+            </Typography>
+            <Line data={waterData} options={{ responsive: true }} />
+          </Paper>
+        </Grid>
+
+        {/* Generate Report */}
+        <Grid item xs={12} textAlign="center">
+          <Button
+            variant="contained"
+            size="large"
+            color="error"
+            sx={{ px: 6, py: 2 }}
+          >
+            Generate Report
+          </Button>
+        </Grid>
+      </Grid>
     </Box>
   );
 }
