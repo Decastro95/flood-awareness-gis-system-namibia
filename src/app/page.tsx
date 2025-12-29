@@ -25,7 +25,7 @@ export default function Dashboard() {
     >
       <Grid container spacing={2}>
         {/* Header */}
-        <Grid item xs={12}>
+        <Grid xs={12}>
           <Typography
             variant="h4"
             sx={{ display: "flex", alignItems: "center", gap: 1 }}
@@ -36,7 +36,7 @@ export default function Dashboard() {
         </Grid>
 
         {/* Risk Level & Population */}
-        <Grid item xs={12} md={4}>
+        <Grid xs={12} md={4}>
           <Paper sx={{ p: 2, backgroundColor: "#3b82f6", color: "white" }}>
             <Typography variant="h6">Flood Risk Level</Typography>
             <Typography variant="h4">High</Typography>
@@ -48,13 +48,13 @@ export default function Dashboard() {
             />
           </Paper>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid xs={12} md={4}>
           <Paper sx={{ p: 2, backgroundColor: "#3b82f6", color: "white" }}>
             <Typography variant="h6">Population Affected</Typography>
             <Typography variant="h4">12,345</Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid xs={12} md={4}>
           <Paper sx={{ p: 2, backgroundColor: "#3b82f6", color: "white" }}>
             <Typography variant="h6">Probability Forecast</Typography>
             <Typography variant="h4">64.0%</Typography>
@@ -68,7 +68,7 @@ export default function Dashboard() {
         </Grid>
 
         {/* Map */}
-        <Grid item xs={12}>
+        <Grid xs={12}>
           <Paper sx={{ p: 2, height: "600px" }}>
             <Typography variant="h6" gutterBottom>
               Flood Risk Map
@@ -78,7 +78,7 @@ export default function Dashboard() {
         </Grid>
 
         {/* Emergency Alerts */}
-        <Grid item xs={12}>
+        <Grid xs={12}>
           <Paper sx={{ p: 2, backgroundColor: "#ef4444", color: "white" }}>
             <Typography
               variant="h6"
