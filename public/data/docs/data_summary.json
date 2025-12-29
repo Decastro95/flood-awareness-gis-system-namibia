@@ -1,0 +1,96 @@
+{
+  "dataset_info": {
+    "source": "Atlas of Namibia Online",
+    "url": "https://atlasofnamibia.online/",
+    "processed_date": "2025-12-23",
+    "coordinate_system": "WGS84 (EPSG:4326)",
+    "focus_area": "Northern Namibia Flood Risk Assessment"
+  },
+  "files": {
+    "hydrology": {
+      "major_rivers.geojson": {
+        "description": "Major international rivers (Zambezi, Kunene, Orange, Okavango)",
+        "geometry_type": "LineString",
+        "use_case": "Primary flood pathways mapping"
+      },
+      "river_tributaries.geojson": {
+        "description": "Detailed river tributary network",
+        "geometry_type": "LineString", 
+        "file_size": "~4MB",
+        "use_case": "Comprehensive drainage network analysis"
+      },
+      "catchments.geojson": {
+        "description": "Watershed boundaries",
+        "geometry_type": "Polygon",
+        "use_case": "Drainage basin analysis and flood modeling"
+      },
+      "dams.geojson": {
+        "description": "Dam locations and infrastructure",
+        "geometry_type": "Point",
+        "use_case": "Infrastructure vulnerability assessment"
+      }
+    },
+    "monitoring": {
+      "monitoring_stations.geojson": {
+        "description": "River flow monitoring station locations",
+        "geometry_type": "Point",
+        "use_case": "Real-time data integration points for early warning"
+      }
+    },
+    "profiles": {
+      "river_elevation_csvs": {
+        "files": [
+          "Kunene_elevation Profile.csv (994 points)",
+          "Zambezi_elevation Profile-to Impalila.csv (1,315 points)",
+          "Okavango_elevation Profile.csv (1,163 points)", 
+          "Orange_elevation Profile.csv (2,342 points)",
+          "Kwando_elevation Profile.csv (1,760 points)"
+        ],
+        "columns": ["ID", "X", "Y", "Elevation", "Distance (Total)", "Slope (Degrees)", "Slope (Percent)"],
+        "use_case": "Flood gradient modeling and inundation analysis"
+      }
+    },
+    "elevation": {
+      "Elevation_namibia_clipSRTM90V2.tif": {
+        "description": "90m resolution elevation raster for Namibia",
+        "format": "GeoTIFF",
+        "resolution": "90 meters",
+        "use_case": "Terrain analysis and flood risk zone identification"
+      }
+    }
+  },
+  "flood_analysis_applications": {
+    "early_warning": [
+      "Monitor river levels at monitoring stations",
+      "Compare with historical flow data",
+      "Alert when thresholds exceeded"
+    ],
+    "risk_mapping": [
+      "Identify low-elevation areas near rivers",
+      "Calculate flood inundation zones",
+      "Map vulnerable communities"
+    ],
+    "infrastructure_assessment": [
+      "Evaluate dam safety during floods",
+      "Assess bridge and road vulnerability",
+      "Plan evacuation routes"
+    ]
+  },
+  "key_rivers_for_northern_namibia": {
+    "Zambezi": {
+      "importance": "Primary flood risk - Caprivi Strip",
+      "elevation_points": 1315,
+      "cross_border": "Angola, Zambia, Botswana"
+    },
+    "Kunene": {
+      "importance": "Angola-Namibia border floods",
+      "elevation_points": 994,
+      "cross_border": "Angola"
+    },
+    "Okavango": {
+      "importance": "Seasonal flooding patterns",
+      "elevation_points": 1163,
+      "cross_border": "Angola, Botswana"
+    }
+  }
+}
