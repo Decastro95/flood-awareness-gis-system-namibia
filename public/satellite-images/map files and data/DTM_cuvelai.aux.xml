@@ -1,0 +1,21 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>DTM_cuvelai</Description>
+    <NoDataValue>6.55350000000000E+004</NoDataValue>
+    <Histograms>
+      <HistItem>
+        <HistMin>0.5</HistMin>
+        <HistMax>16.5</HistMax>
+        <BucketCount>16</BucketCount>
+        <IncludeOutOfRange>1</IncludeOutOfRange>
+        <Approximate>0</Approximate>
+        <HistCounts>138|856|1686|2679|4405|6141|29516|228730|114361|47947|19518|7190|2027|683|208|31</HistCounts>
+      </HistItem>
+    </Histograms>
+    <Metadata>
+      <MDI key="STATISTICS_SKIPFACTORX">1</MDI>
+      <MDI key="STATISTICS_SKIPFACTORY">1</MDI>
+      <MDI key="STATISTICS_EXCLUDEDVALUES"></MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
