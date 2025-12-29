@@ -29,7 +29,7 @@ ChartJS.register(
   Legend
 );
 
-// Sample chart data (replace with real from Supabase/OpenWeatherMap)
+// Sample chart data
 const precipData = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
   datasets: [
@@ -62,19 +62,14 @@ export default function Dashboard() {
         p: 4,
       }}
     >
-      <Typography
-        variant="h4"
-        gutterBottom
-        textAlign="center"
-        fontWeight="bold"
-      >
+      <Typography variant="h4" gutterBottom textAlign="center">
         Flood Awareness GIS System – Northern Namibia
       </Typography>
 
       <Grid container spacing={3}>
-        {/* Risk Stats Cards */}
+        {/* Risk Cards */}
         <Grid item xs={12} sm={6} md={3}>
-          <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
+          <Paper sx={{ p: 2, backgroundColor: "#1e293b" }}>
             <Typography variant="h6">Flood Risk Level</Typography>
             <Typography variant="h3" color="error.main">
               High
@@ -82,19 +77,19 @@ export default function Dashboard() {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
+          <Paper sx={{ p: 2, backgroundColor: "#1e293b" }}>
             <Typography variant="h6">Population Affected</Typography>
             <Typography variant="h3">12,345</Typography>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
+          <Paper sx={{ p: 2, backgroundColor: "#1e293b" }}>
             <Typography variant="h6">Probability Forecast</Typography>
             <Typography variant="h3">64%</Typography>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
+          <Paper sx={{ p: 2, backgroundColor: "#1e293b" }}>
             <Typography variant="h6">Active Alerts</Typography>
             <Typography variant="h3" color="warning.main">
               2
@@ -102,7 +97,7 @@ export default function Dashboard() {
           </Paper>
         </Grid>
 
-        {/* Central Big Map */}
+        {/* Central Map */}
         <Grid item xs={12} md={8}>
           <Paper sx={{ p: 2, height: "600px", backgroundColor: "#1e293b" }}>
             <Typography variant="h6" gutterBottom>
@@ -112,10 +107,10 @@ export default function Dashboard() {
           </Paper>
         </Grid>
 
-        {/* Sidebar: Globe & Alerts */}
+        {/* Sidebar */}
         <Grid item xs={12} md={4}>
           <Paper
-            sx={{ p: 2, mb: 4, height: "300px", backgroundColor: "#1e293b" }}
+            sx={{ p: 2, mb: 3, height: "300px", backgroundColor: "#1e293b" }}
           >
             <Typography variant="h6" gutterBottom>
               Globe View
@@ -123,32 +118,30 @@ export default function Dashboard() {
             <Box
               sx={{
                 height: "100%",
-                backgroundColor: "#334155",
+                background: "#334155",
                 borderRadius: 2,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
               }}
             >
-              <Typography>Globe Coming Soon</Typography>
+              <Typography>Globe View Coming Soon</Typography>
             </Box>
           </Paper>
-          <Paper sx={{ p: 3, backgroundColor: "#dc2626" }}>
+          <Paper sx={{ p: 2, backgroundColor: "#dc2626" }}>
             <Typography
               variant="h6"
               sx={{ display: "flex", alignItems: "center", gap: 1 }}
             >
               <WarningIcon /> Emergency Alerts
             </Typography>
-            <Typography sx={{ mt: 1 }}>
-              Heavy rain in Oshana – evacuate low areas.
-            </Typography>
+            <Typography>Heavy rain in Oshana – evacuate low areas.</Typography>
           </Paper>
         </Grid>
 
         {/* Charts */}
         <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 3, backgroundColor: "#1e293b" }}>
+          <Paper sx={{ p: 2, backgroundColor: "#1e293b" }}>
             <Typography variant="h6" gutterBottom>
               Precipitation Level
             </Typography>
@@ -156,7 +149,7 @@ export default function Dashboard() {
           </Paper>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 3, backgroundColor: "#1e293b" }}>
+          <Paper sx={{ p: 2, backgroundColor: "#1e293b" }}>
             <Typography variant="h6" gutterBottom>
               Water Levels
             </Typography>
@@ -164,7 +157,7 @@ export default function Dashboard() {
           </Paper>
         </Grid>
 
-        {/* Generate Report */}
+        {/* Report */}
         <Grid item xs={12} textAlign="center">
           <Button
             variant="contained"
