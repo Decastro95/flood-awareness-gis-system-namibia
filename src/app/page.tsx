@@ -75,7 +75,7 @@ export default function Dashboard() {
     >
       <Grid container spacing={2}>
         {/* Header */}
-        <Grid item xs={12}>
+        <Grid item={true} xs={12}>
           <Typography
             variant="h4"
             sx={{ display: "flex", alignItems: "center", gap: 1 }}
@@ -86,7 +86,7 @@ export default function Dashboard() {
         </Grid>
 
         {/* Risk Level & Population */}
-        <Grid item xs={12} md={4}>
+        <Grid item={true} xs={12} md={4}>
           <Paper sx={{ p: 2, backgroundColor: "#3b82f6", color: "white" }}>
             <Typography variant="h6">Flood Risk Level</Typography>
             <Typography variant="h4">High</Typography>
@@ -98,13 +98,13 @@ export default function Dashboard() {
             />
           </Paper>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item={true} xs={12} md={4}>
           <Paper sx={{ p: 2, backgroundColor: "#3b82f6", color: "white" }}>
             <Typography variant="h6">Population Affected</Typography>
             <Typography variant="h4">12,345</Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item={true} xs={12} md={4}>
           <Paper sx={{ p: 2, backgroundColor: "#3b82f6", color: "white" }}>
             <Typography variant="h6">Probability Forecast</Typography>
             <Typography variant="h4">64.0%</Typography>
@@ -118,13 +118,13 @@ export default function Dashboard() {
         </Grid>
 
         {/* Map & Globe */}
-        <Grid item xs={12} md={8}>
+        <Grid item={true} xs={12} md={8}>
           <Paper sx={{ p: 2, height: "400px" }}>
             <Typography variant="h6">Flood Risk Map</Typography>
             <LeafletMap />
           </Paper>
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item={true} xs={12} md={4}>
           <Paper sx={{ p: 2, height: "400px" }}>
             <Typography variant="h6">Globe View</Typography>
             <div
@@ -140,13 +140,13 @@ export default function Dashboard() {
         </Grid>
 
         {/* Charts */}
-        <Grid item xs={12} md={6}>
+        <Grid item={true} xs={12} md={6}>
           <Card sx={{ p: 2 }}>
             <Typography variant="h6">Precipitation Level</Typography>
             <Bar data={precipitationData} options={{ responsive: true }} />
           </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item={true} xs={12} md={6}>
           <Card sx={{ p: 2 }}>
             <Typography variant="h6">Water Levels</Typography>
             <Line data={waterLevelsData} options={{ responsive: true }} />
@@ -154,7 +154,7 @@ export default function Dashboard() {
         </Grid>
 
         {/* Alerts & Report */}
-        <Grid item xs={12}>
+        <Grid item={true} xs={12}>
           <Paper sx={{ p: 2, backgroundColor: "#ef4444", color: "white" }}>
             <Typography
               variant="h6"
