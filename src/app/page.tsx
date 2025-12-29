@@ -6,6 +6,7 @@ import { Box, Container, Typography, Button } from "@mui/material";
 import MapIcon from "@mui/icons-material/Map";
 import PublicIcon from "@mui/icons-material/Public";
 import WarningIcon from "@mui/icons-material/Warning";
+import LeafletMap from "@/components/LeafletMap";
 
 export default function Home() {
   return (
@@ -45,12 +46,7 @@ export default function Home() {
               variant="contained"
               size="large"
               startIcon={<MapIcon />}
-              sx={{
-                backgroundColor: "white",
-                color: "#1976d2",
-                "&:hover": { backgroundColor: "#f0f0f0" },
-                minWidth: 200,
-              }}
+              sx={{ minWidth: 220, backgroundColor: "white", color: "#1976d2" }}
             >
               View Interactive Map
             </Button>
@@ -58,15 +54,7 @@ export default function Home() {
               variant="outlined"
               size="large"
               startIcon={<PublicIcon />}
-              sx={{
-                borderColor: "white",
-                color: "white",
-                "&:hover": {
-                  borderColor: "white",
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                },
-                minWidth: 200,
-              }}
+              sx={{ minWidth: 220, borderColor: "white", color: "white" }}
             >
               Globe View
             </Button>
@@ -75,7 +63,7 @@ export default function Home() {
               size="large"
               startIcon={<WarningIcon />}
               color="error"
-              sx={{ minWidth: 200 }}
+              sx={{ minWidth: 220 }}
             >
               Emergency Alerts
             </Button>
@@ -83,56 +71,64 @@ export default function Home() {
         </Container>
       </Box>
 
-      {/* Bottom Section */}
-      <Container maxWidth="lg" sx={{ py: 8, textAlign: "center" }}>
-        <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
-          Advanced Flood Risk Management
+      {/* Map Section */}
+      <Container maxWidth="lg" sx={{ py: 8 }}>
+        <Typography variant="h4" gutterBottom textAlign="center">
+          Interactive Flood Risk Map
         </Typography>
-        <Typography
-          variant="body1"
-          color="text.secondary"
-          sx={{ mb: 8, maxWidth: "800px", mx: "auto" }}
-        >
-          Leveraging cutting-edge GIS technology and real-time data to protect
-          communities in Northern Namibia from flood disasters.
-        </Typography>
-
         <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            gap: 8,
-            flexWrap: "wrap",
-            mt: 6,
+            height: "600px",
+            width: "100%",
+            mt: 4,
+            borderRadius: 2,
+            overflow: "hidden",
+            boxShadow: 3,
           }}
         >
-          <Box>
-            <Typography sx={{ fontSize: 80 }}>🗺️</Typography>
-            <Typography variant="h6" gutterBottom>
-              Real-Time Mapping
-            </Typography>
-            <Typography color="text.secondary">
-              Live flood zones and safe areas
-            </Typography>
-          </Box>
-          <Box>
-            <Typography sx={{ fontSize: 80 }}>🌍</Typography>
-            <Typography variant="h6" gutterBottom>
-              Global Context
-            </Typography>
-            <Typography color="text.secondary">
-              Satellite and 3D views
-            </Typography>
-          </Box>
-          <Box>
-            <Typography sx={{ fontSize: 80 }}>🚨</Typography>
-            <Typography variant="h6" gutterBottom>
-              Early Warnings
-            </Typography>
-            <Typography color="text.secondary">SMS and app alerts</Typography>
-          </Box>
+          <LeafletMap />
         </Box>
       </Container>
+
+      {/* Features */}
+      <Box sx={{ backgroundColor: "#f5f5f5", py: 8 }}>
+        <Container maxWidth="lg">
+          <Typography variant="h4" gutterBottom textAlign="center">
+            Key Features
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              gap: 8,
+              flexWrap: "wrap",
+              mt: 6,
+            }}
+          >
+            <Box sx={{ textAlign: "center", maxWidth: 300 }}>
+              <Typography sx={{ fontSize: 80 }}>🗺️</Typography>
+              <Typography variant="h6">Real-Time Mapping</Typography>
+              <Typography color="text.secondary">
+                Live flood zones, safe areas, trig points
+              </Typography>
+            </Box>
+            <Box sx={{ textAlign: "center", maxWidth: 300 }}>
+              <Typography sx={{ fontSize: 80 }}>🌧️</Typography>
+              <Typography variant="h6">Rainfall Data</Typography>
+              <Typography color="text.secondary">
+                Current precipitation overlay
+              </Typography>
+            </Box>
+            <Box sx={{ textAlign: "center", maxWidth: 300 }}>
+              <Typography sx={{ fontSize: 80 }}>🚨</Typography>
+              <Typography variant="h6">Early Warnings</Typography>
+              <Typography color="text.secondary">
+                SMS alerts and emergency notifications
+              </Typography>
+            </Box>
+          </Box>
+        </Container>
+      </Box>
     </Box>
   );
 }
