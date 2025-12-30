@@ -29,7 +29,6 @@ ChartJS.register(
   Legend
 );
 
-// Sample data
 const precipData = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
   datasets: [
