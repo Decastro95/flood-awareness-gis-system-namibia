@@ -1,7 +1,11 @@
 "use client";
 
 import React from "react";
-import { Box, Grid, Paper, Typography, Button } from "@mui/material";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 import WarningIcon from "@mui/icons-material/Warning";
 import LeafletMap from "@/components/LeafletMap";
 import { Bar, Line } from "react-chartjs-2";
