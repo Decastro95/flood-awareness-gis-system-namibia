@@ -67,7 +67,7 @@ export default function Dashboard() {
 
       <Grid container spacing={3}>
         {/* Risk Cards */}
-        <Grid xs={12} sm={6} md={3}>
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
             <Typography variant="h6">Flood Risk Level</Typography>
             <Typography variant="h3" color="error.main">
@@ -75,19 +75,22 @@ export default function Dashboard() {
             </Typography>
           </Paper>
         </Grid>
-        <Grid xs={12} sm={6} md={3}>
+
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
             <Typography variant="h6">Population Affected</Typography>
             <Typography variant="h3">12,345</Typography>
           </Paper>
         </Grid>
-        <Grid xs={12} sm={6} md={3}>
+
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
             <Typography variant="h6">Probability Forecast</Typography>
             <Typography variant="h3">64%</Typography>
           </Paper>
         </Grid>
-        <Grid xs={12} sm={6} md={3}>
+
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Paper sx={{ p: 3, backgroundColor: "#1e293b", textAlign: "center" }}>
             <Typography variant="h6">Active Alerts</Typography>
             <Typography variant="h3" color="warning.main">
@@ -97,8 +100,8 @@ export default function Dashboard() {
         </Grid>
 
         {/* Central Map */}
-        <Grid xs={12} md={8}>
-          <Paper sx={{ p: 2, height: "600px", backgroundColor: "#1e293b" }}>
+        <Grid size={{ xs: 12, md: 8 }}>
+          <Paper sx={{ p: 2, height: 600, backgroundColor: "#1e293b" }}>
             <Typography variant="h6" gutterBottom>
               Northern Namibia Risk Map
             </Typography>
@@ -107,10 +110,8 @@ export default function Dashboard() {
         </Grid>
 
         {/* Sidebar */}
-        <Grid xs={12} md={4}>
-          <Paper
-            sx={{ p: 2, mb: 3, height: "300px", backgroundColor: "#1e293b" }}
-          >
+        <Grid size={{ xs: 12, md: 4 }}>
+          <Paper sx={{ p: 2, mb: 3, height: 300, backgroundColor: "#1e293b" }}>
             <Typography variant="h6" gutterBottom>
               Globe View
             </Typography>
@@ -127,11 +128,9 @@ export default function Dashboard() {
               <Typography>Globe Coming Soon</Typography>
             </Box>
           </Paper>
+
           <Paper sx={{ p: 2, backgroundColor: "#dc2626" }}>
-            <Typography
-              variant="h6"
-              sx={{ display: "flex", alignItems: "center", gap: 1 }}
-            >
+            <Typography sx={{ display: "flex", alignItems: "center", gap: 1 }}>
               <WarningIcon /> Emergency Alerts
             </Typography>
             <Typography sx={{ mt: 1 }}>
@@ -141,31 +140,23 @@ export default function Dashboard() {
         </Grid>
 
         {/* Charts */}
-        <Grid xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Paper sx={{ p: 3, backgroundColor: "#1e293b" }}>
-            <Typography variant="h6" gutterBottom>
-              Precipitation Level
-            </Typography>
-            <Bar data={precipData} options={{ responsive: true }} />
+            <Typography variant="h6">Precipitation Level</Typography>
+            <Bar data={precipData} />
           </Paper>
         </Grid>
-        <Grid xs={12} md={6}>
+
+        <Grid size={{ xs: 12, md: 6 }}>
           <Paper sx={{ p: 3, backgroundColor: "#1e293b" }}>
-            <Typography variant="h6" gutterBottom>
-              Water Levels
-            </Typography>
-            <Line data={waterData} options={{ responsive: true }} />
+            <Typography variant="h6">Water Levels</Typography>
+            <Line data={waterData} />
           </Paper>
         </Grid>
 
         {/* Report */}
-        <Grid xs={12} textAlign="center">
-          <Button
-            variant="contained"
-            size="large"
-            color="error"
-            sx={{ px: 6, py: 2 }}
-          >
+        <Grid size={{ xs: 12 }} textAlign="center">
+          <Button variant="contained" size="large" color="error">
             Generate Report
           </Button>
         </Grid>
